@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subjects>
+<id_table>
+<dedup_entry id="0" peg="(unit)"/>
+<dedup_entry id="1" peg="(heap 0 0)"/>
+<dedup_entry id="2" peg="(nil)"/>
+<dedup_entry id="3" peg="(a)"/>
+<dedup_entry id="4" peg="(var 3 2)"/>
+<dedup_entry id="5" peg="(b)"/>
+<dedup_entry id="6" peg="(var 5 2)"/>
+<dedup_entry id="7" peg="(c)"/>
+<dedup_entry id="8" peg="(var 7 2)"/>
+<dedup_entry id="9" peg="0"/>
+<dedup_entry id="10" peg="(heap 9 0)"/>
+<dedup_entry id="11" peg="1"/>
+<dedup_entry id="12" peg="2"/>
+<dedup_entry id="13" peg="3"/>
+<dedup_entry id="14" peg="(&lt;= 4 9)"/>
+<dedup_entry id="15" peg="(&lt;= 6 9)"/>
+<dedup_entry id="16" peg="(|| 14 15)"/>
+<dedup_entry id="17" peg="(phi 14 9 9)"/>
+<dedup_entry id="18" peg="(phi 14 0 0)"/>
+<dedup_entry id="19" peg="(heap 17 18)"/>
+<dedup_entry id="20" peg="(phi 14 11 11)"/>
+<dedup_entry id="21" peg="(phi 14 4 4)"/>
+<dedup_entry id="22" peg="(phi 14 6 6)"/>
+<dedup_entry id="23" peg="(phi 14 12 12)"/>
+<dedup_entry id="24" peg="(phi 14 8 8)"/>
+<dedup_entry id="25" peg="(phi 14 13 13)"/>
+<dedup_entry id="26" peg="(&lt;= 24 9)"/>
+<dedup_entry id="27" peg="(|| 16 26)"/>
+<dedup_entry id="28" peg="(phi 16 17 17)"/>
+<dedup_entry id="29" peg="(phi 16 18 18)"/>
+<dedup_entry id="30" peg="(heap 28 29)"/>
+<dedup_entry id="31" peg="(phi 16 20 20)"/>
+<dedup_entry id="32" peg="(phi 16 21 21)"/>
+<dedup_entry id="33" peg="(phi 16 22 22)"/>
+<dedup_entry id="34" peg="(phi 16 23 23)"/>
+<dedup_entry id="35" peg="(phi 16 24 24)"/>
+<dedup_entry id="36" peg="(phi 16 25 25)"/>
+</id_table>
+<node_equivalences/>
+</subjects>
