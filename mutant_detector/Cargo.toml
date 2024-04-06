@@ -1,0 +1,42 @@
+[package]
+name = "mutant_detector"
+version = "0.1.6"
+authors = ["Ushmajeet"]
+edition = "2018"
+[lib]
+name = "mutant_detector"
+path = "src/dependencies.rs"
+
+[[bin]]
+name = "mutant_detector"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+roxmltree = "0.9.1"
+egg = { git = "https://github.com/mwillsey/egg", rev = "dd3642eb882cd13a9dea480669a66ebd16b00232" }
+
+# serde
+serde = { version = "1.0", features = ["derive"] }
+serde-xml-rs = "0.3.1"
+# for "deserialize_number_from_string" 
+serde-aux = "0.6.1"
+
+# for "EnumFromStr"
+enum_derive = "0.1.7"
+custom_derive = "0.1.7"
+itertools = "0.7.8"
+
+# For assertions
+anyhow = "1.0"
+
+log = "0.4.11"
+env_logger = "0.7.1"
+
+# CLI Parsing
+structopt = "0.3"
+instant = "^0.1"
+
+indexmap = "1"
+fxhash = "0.2"
