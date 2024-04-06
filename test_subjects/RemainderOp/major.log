@@ -1,0 +1,404 @@
+[04/24 21:36:25] [INFO   ] org.mutationtesting.major.plugin.MajorPluginTaskListener.<init>:
+    Created MajorPluginTaskListener with options: [export.mutants]
+[04/24 21:36:25] [INFO   ] org.mutationtesting.major.plugin.MajorPluginTaskListener.initMutator:
+    No mutator provided: using default mutation provider
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.initOperatorSymbols:
+    Initializing operator symbols for opcode mapping
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.mutateTree:
+    Mutating tree: Env[AttrContext[Scope[super, this]],outer=Env[AttrContext[Scope[RemainderOperationsTest]]]]
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitClassDef:
+    CLASS: RemainderOperationsTest
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: <init>([])null
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderWithOne([int a])int
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 1: RemainderOperationsTest.remainderWithOne(line 5, col 20)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  1 
+            mutant:                    0
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 2
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 2: RemainderOperationsTest.remainderWithOne(line 5, col 20)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  1 
+            mutant:                    -1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 3
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 3: RemainderOperationsTest.remainderWithOne(line 5, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  a % 1 
+            mutant:                    a * 1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 4
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 4: RemainderOperationsTest.remainderWithOne(line 5, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  a % 1 
+            mutant:                    a + 1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 5
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 5: RemainderOperationsTest.remainderWithOne(line 5, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  a % 1 
+            mutant:                    a - 1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 6
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 6: RemainderOperationsTest.remainderWithOne(line 5, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  a % 1 
+            mutant:                    a / 1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderOfSameNumbers([int a])int
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 7
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 7: RemainderOperationsTest.remainderOfSameNumbers(line 10, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  a % a 
+            mutant:                    a * a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 8
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 8: RemainderOperationsTest.remainderOfSameNumbers(line 10, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  a % a 
+            mutant:                    a + a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 9
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 9: RemainderOperationsTest.remainderOfSameNumbers(line 10, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  a % a 
+            mutant:                    a - a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 10
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 10: RemainderOperationsTest.remainderOfSameNumbers(line 10, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  a % a 
+            mutant:                    a / a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderWithZeroNumerator([int a])int
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 11
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 11: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 16)
+            mutation operator group:   LVR
+            mutation operator:         0 |==> POS
+            original:                  0 
+            mutant:                    1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 12
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 12: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 16)
+            mutation operator group:   LVR
+            mutation operator:         0 |==> NEG
+            original:                  0 
+            mutant:                    -1
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 13
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 13: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  0 % a 
+            mutant:                    0 * a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 14
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 14: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  0 % a 
+            mutant:                    0 + a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 15
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 15: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  0 % a 
+            mutant:                    0 - a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 16
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 16: RemainderOperationsTest.remainderWithZeroNumerator(line 15, col 18)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  0 % a 
+            mutant:                    0 / a
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderDistributiveAdd([int a, int b, int n])int
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 17
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 17: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 19)
+            mutation operator group:   AOR
+            mutation operator:         +(int,int) |==> %(int,int)
+            original:                  a + b 
+            mutant:                    a % b
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 18
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 18: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 19)
+            mutation operator group:   AOR
+            mutation operator:         +(int,int) |==> *(int,int)
+            original:                  a + b 
+            mutant:                    a * b
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 19
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 19: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 19)
+            mutation operator group:   AOR
+            mutation operator:         +(int,int) |==> -(int,int)
+            original:                  a + b 
+            mutant:                    a - b
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 20
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 20: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 19)
+            mutation operator group:   AOR
+            mutation operator:         +(int,int) |==> /(int,int)
+            original:                  a + b 
+            mutant:                    a / b
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 21
+[04/24 21:36:26] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 21: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  (a + b) % n 
+            mutant:                    (a + b) * n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 22
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 22: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  (a + b) % n 
+            mutant:                    (a + b) + n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 23
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 23: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  (a + b) % n 
+            mutant:                    (a + b) - n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 24
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 24: RemainderOperationsTest.remainderDistributiveAdd(line 20, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  (a + b) % n 
+            mutant:                    (a + b) / n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderDistributiveSub([int a, int b, int n])int
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 25
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 25: RemainderOperationsTest.remainderDistributiveSub(line 25, col 19)
+            mutation operator group:   AOR
+            mutation operator:         -(int,int) |==> %(int,int)
+            original:                  a - b 
+            mutant:                    a % b
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 26
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 26: RemainderOperationsTest.remainderDistributiveSub(line 25, col 19)
+            mutation operator group:   AOR
+            mutation operator:         -(int,int) |==> *(int,int)
+            original:                  a - b 
+            mutant:                    a * b
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 27
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 27: RemainderOperationsTest.remainderDistributiveSub(line 25, col 19)
+            mutation operator group:   AOR
+            mutation operator:         -(int,int) |==> +(int,int)
+            original:                  a - b 
+            mutant:                    a + b
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 28
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 28: RemainderOperationsTest.remainderDistributiveSub(line 25, col 19)
+            mutation operator group:   AOR
+            mutation operator:         -(int,int) |==> /(int,int)
+            original:                  a - b 
+            mutant:                    a / b
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 29
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 29: RemainderOperationsTest.remainderDistributiveSub(line 25, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  (a - b) % n 
+            mutant:                    (a - b) * n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 30
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 30: RemainderOperationsTest.remainderDistributiveSub(line 25, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  (a - b) % n 
+            mutant:                    (a - b) + n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 31
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 31: RemainderOperationsTest.remainderDistributiveSub(line 25, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  (a - b) % n 
+            mutant:                    (a - b) - n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 32
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 32: RemainderOperationsTest.remainderDistributiveSub(line 25, col 24)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  (a - b) % n 
+            mutant:                    (a - b) / n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: remainderNegation([int a, int n])int
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 33
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 33: RemainderOperationsTest.remainderNegation(line 30, col 17)
+            mutation operator group:   ORU
+            mutation operator:         ---(int) |==> +++(int)
+            original:                  -a 
+            mutant:                    +a
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 34
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 34: RemainderOperationsTest.remainderNegation(line 30, col 17)
+            mutation operator group:   ORU
+            mutation operator:         ---(int) |==> ~(int)
+            original:                  -a 
+            mutant:                    ~a
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 35
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 35: RemainderOperationsTest.remainderNegation(line 30, col 21)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  (-a) % n 
+            mutant:                    (-a) * n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 36
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 36: RemainderOperationsTest.remainderNegation(line 30, col 21)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  (-a) % n 
+            mutant:                    (-a) + n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 37
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 37: RemainderOperationsTest.remainderNegation(line 30, col 21)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> -(int,int)
+            original:                  (-a) % n 
+            mutant:                    (-a) - n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 38
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 38: RemainderOperationsTest.remainderNegation(line 30, col 21)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> /(int,int)
+            original:                  (-a) % n 
+            mutant:                    (-a) / n
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: main([String[] args])void
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 39
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 39: RemainderOperationsTest.main(line 35, col 17)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  5 
+            mutant:                    0
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 40
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 40: RemainderOperationsTest.main(line 35, col 17)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  5 
+            mutant:                    -5
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 41
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 41: RemainderOperationsTest.main(line 35, col 24)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  3 
+            mutant:                    0
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 42
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 42: RemainderOperationsTest.main(line 35, col 24)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  3 
+            mutant:                    -3
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 43
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 43: RemainderOperationsTest.main(line 35, col 31)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  2 
+            mutant:                    0
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 44
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 44: RemainderOperationsTest.main(line 35, col 31)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  2 
+            mutant:                    -2
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 45
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 45: (STD) System.out.println("remainderWithOne: " + remainderWithOne(a)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 46
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 46: (STD) System.out.println("remainderOfSameNumbers: " + remainderOfSameNumbers(a)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 47
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 47: (STD) System.out.println("remainderWithZeroNumerator: " + remainderWithZeroNumerator(a)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 48
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 48: (STD) System.out.println("remainderDistributiveAdd: " + remainderDistributiveAdd(a, b, n)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 49
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 49: (STD) System.out.println("remainderDistributiveSub: " + remainderDistributiveSub(a, b, n)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 50
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutantSTD:
+    Logging mutantSTD 50: (STD) System.out.println("remainderNegation: " + remainderNegation(a, n)); -> <NO-OP>
+[04/24 21:36:27] [INFO   ] org.mutationtesting.major.plugin.MajorPluginTaskListener.mutate:
+    Generated 50 mutants (1587 ms)
