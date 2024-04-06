@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subjects>
+<id_table>
+<dedup_entry id="0" peg="(unit)"/>
+<dedup_entry id="1" peg="(heap 0 0)"/>
+<dedup_entry id="2" peg="(nil)"/>
+<dedup_entry id="3" peg="(this)"/>
+<dedup_entry id="4" peg="(var 3 2)"/>
+<dedup_entry id="5" peg="(n1)"/>
+<dedup_entry id="6" peg="(var 5 2)"/>
+<dedup_entry id="7" peg="(n2)"/>
+<dedup_entry id="8" peg="(var 7 2)"/>
+<dedup_entry id="9" peg="0"/>
+<dedup_entry id="10" peg="(heap 9 0)"/>
+<dedup_entry id="11" peg="1"/>
+<dedup_entry id="12" peg="(blank 9)"/>
+<dedup_entry id="13" peg="(theta 11 12)"/>
+<dedup_entry id="14" peg="(blank 11)"/>
+<dedup_entry id="15" peg="(theta 11 14)"/>
+<dedup_entry id="16" peg="2"/>
+<dedup_entry id="17" peg="(blank 16)"/>
+<dedup_entry id="18" peg="(theta 6 17)"/>
+<dedup_entry id="19" peg="3"/>
+<dedup_entry id="20" peg="(blank 19)"/>
+<dedup_entry id="21" peg="(theta 8 20)"/>
+<dedup_entry id="22" peg="4"/>
+<dedup_entry id="23" peg="(blank 22)"/>
+<dedup_entry id="24" peg="(theta 9 23)"/>
+<dedup_entry id="25" peg="5"/>
+<dedup_entry id="26" peg="(blank 25)"/>
+<dedup_entry id="27" peg="(theta 0 26)"/>
+<dedup_entry id="28" peg="(heap 24 27)"/>
+<dedup_entry id="29" peg="(&lt;= 15 18)"/>
+<dedup_entry id="30" peg="(&lt;= 15 21)"/>
+<dedup_entry id="31" peg="(&amp;&amp; 29 30)"/>
+<dedup_entry id="32" peg="(phi 29 24 24)"/>
+<dedup_entry id="33" peg="(phi 29 27 27)"/>
+<dedup_entry id="34" peg="(heap 32 33)"/>
+<dedup_entry id="35" peg="(phi 29 18 18)"/>
+<dedup_entry id="36" peg="(phi 29 21 21)"/>
+<dedup_entry id="37" peg="(phi 29 4 4)"/>
+<dedup_entry id="38" peg="(phi 29 15 15)"/>
+<dedup_entry id="39" peg="(phi 29 13 13)"/>
+<dedup_entry id="40" peg="(== 38 9)"/>
+<dedup_entry id="41" peg="(java.lang.DivideByZeroError)"/>
+<dedup_entry id="42" peg="(isunit? 33)"/>
+<dedup_entry id="43" peg="(phi 40 41 0)"/>
+<dedup_entry id="44" peg="(phi 42 43 33)"/>
+<dedup_entry id="45" peg="(heap 32 44)"/>
+<dedup_entry id="46" peg="(% 35 38)"/>
+<dedup_entry id="47" peg="(phi 40 0 46)"/>
+<dedup_entry id="48" peg="(== 47 9)"/>
+<dedup_entry id="49" peg="(% 36 38)"/>
+<dedup_entry id="50" peg="(phi 40 0 49)"/>
+<dedup_entry id="51" peg="(== 50 9)"/>
+<dedup_entry id="52" peg="(&amp;&amp; 48 51)"/>
+<dedup_entry id="53" peg="(phi 48 32 32)"/>
+<dedup_entry id="54" peg="(phi 48 33 33)"/>
+<dedup_entry id="55" peg="(heap 53 54)"/>
+<dedup_entry id="56" peg="(phi 48 35 35)"/>
+<dedup_entry id="57" peg="(phi 48 36 36)"/>
+<dedup_entry id="58" peg="(phi 48 37 37)"/>
+<dedup_entry id="59" peg="(phi 48 38 38)"/>
+<dedup_entry id="60" peg="(phi 48 39 39)"/>
+<dedup_entry id="61" peg="(phi 52 0 52)"/>
+<dedup_entry id="62" peg="(phi 52 53 53)"/>
+<dedup_entry id="63" peg="(phi 52 54 54)"/>
+<dedup_entry id="64" peg="(heap 62 63)"/>
+<dedup_entry id="65" peg="(phi 52 56 56)"/>
+<dedup_entry id="66" peg="(phi 52 57 57)"/>
+<dedup_entry id="67" peg="(phi 52 58 58)"/>
+<dedup_entry id="68" peg="(phi 52 59 60)"/>
+<dedup_entry id="69" peg="(phi 52 59 59)"/>
+<dedup_entry id="70" peg="(+ 69 11)"/>
+<dedup_entry id="71" peg="(pass 31)"/>
+<dedup_entry id="72" peg="(eval 39 71)"/>
+<dedup_entry id="73" peg="(eval 38 71)"/>
+<dedup_entry id="74" peg="(eval 35 71)"/>
+<dedup_entry id="75" peg="(eval 36 71)"/>
+<dedup_entry id="76" peg="(eval 32 71)"/>
+<dedup_entry id="77" peg="(eval 33 71)"/>
+<dedup_entry id="78" peg="(heap 76 77)"/>
+<dedup_entry id="79" peg="(return-node 72 78)"/>
+<dedup_entry id="80" peg="(year)"/>
+<dedup_entry id="81" peg="(var 80 2)"/>
+<dedup_entry id="82" peg="(== 22 9)"/>
+<dedup_entry id="83" peg="(phi 82 41 0)"/>
+<dedup_entry id="84" peg="(heap 9 83)"/>
+<dedup_entry id="85" peg="(% 81 22)"/>
+<dedup_entry id="86" peg="(phi 82 0 85)"/>
+<dedup_entry id="87" peg="(== 86 9)"/>
+<dedup_entry id="88" peg="100"/>
+<dedup_entry id="89" peg="(== 88 9)"/>
+<dedup_entry id="90" peg="(phi 89 41 0)"/>
+<dedup_entry id="91" peg="(heap 9 90)"/>
+<dedup_entry id="92" peg="(% 81 88)"/>
+<dedup_entry id="93" peg="(phi 89 0 92)"/>
+<dedup_entry id="94" peg="(!= 93 9)"/>
+<dedup_entry id="95" peg="400"/>
+<dedup_entry id="96" peg="(== 95 9)"/>
+<dedup_entry id="97" peg="(phi 96 41 0)"/>
+<dedup_entry id="98" peg="(heap 9 97)"/>
+<dedup_entry id="99" peg="(% 81 95)"/>
+<dedup_entry id="100" peg="(phi 96 0 99)"/>
+<dedup_entry id="101" peg="(== 100 9)"/>
+<dedup_entry id="102" peg="(|| 94 101)"/>
+<dedup_entry id="103" peg="(phi 94 9 9)"/>
+<dedup_entry id="104" peg="(phi 94 0 0)"/>
+<dedup_entry id="105" peg="(heap 103 104)"/>
+<dedup_entry id="106" peg="(phi 94 81 81)"/>
+<dedup_entry id="107" peg="(phi 94 4 4)"/>
+<dedup_entry id="108" peg="(&amp;&amp; 87 102)"/>
+<dedup_entry id="109" peg="(phi 87 103 9)"/>
+<dedup_entry id="110" peg="(phi 87 104 0)"/>
+<dedup_entry id="111" peg="(heap 109 110)"/>
+<dedup_entry id="112" peg="(phi 87 106 81)"/>
+<dedup_entry id="113" peg="(phi 87 107 4)"/>
+<dedup_entry id="114" peg="(a)"/>
+<dedup_entry id="115" peg="(var 114 2)"/>
+<dedup_entry id="116" peg="(b)"/>
+<dedup_entry id="117" peg="(var 116 2)"/>
+<dedup_entry id="118" peg="(&lt;= 115 117)"/>
+<dedup_entry id="119" peg="(A)"/>
+<dedup_entry id="120" peg="(var 119 2)"/>
+<dedup_entry id="121" peg="(B)"/>
+<dedup_entry id="122" peg="(var 121 2)"/>
+<dedup_entry id="123" peg="(arr)"/>
+<dedup_entry id="124" peg="(var 123 2)"/>
+<dedup_entry id="125" peg="(length)"/>
+<dedup_entry id="126" peg="(derefs 125)"/>
+<dedup_entry id="127" peg="(path 124 126)"/>
+<dedup_entry id="128" peg="(isnull? 124)"/>
+<dedup_entry id="129" peg="(java.lang.NullPointerException)"/>
+<dedup_entry id="130" peg="(phi 128 129 0)"/>
+<dedup_entry id="131" peg="(heap 9 130)"/>
+<dedup_entry id="132" peg="(rd 127 10)"/>
+<dedup_entry id="133" peg="(phi 128 0 132)"/>
+<dedup_entry id="134" peg="6"/>
+<dedup_entry id="135" peg="(blank 134)"/>
+<dedup_entry id="136" peg="(theta 124 135)"/>
+<dedup_entry id="137" peg="7"/>
+<dedup_entry id="138" peg="(blank 137)"/>
+<dedup_entry id="139" peg="(theta 133 138)"/>
+<dedup_entry id="140" peg="8"/>
+<dedup_entry id="141" peg="(blank 140)"/>
+<dedup_entry id="142" peg="(theta 9 141)"/>
+<dedup_entry id="143" peg="9"/>
+<dedup_entry id="144" peg="(blank 143)"/>
+<dedup_entry id="145" peg="(theta 130 144)"/>
+<dedup_entry id="146" peg="(heap 142 145)"/>
+<dedup_entry id="147" peg="(- 139 11)"/>
+<dedup_entry id="148" peg="(phi 128 139 147)"/>
+<dedup_entry id="149" peg="(&gt;= 147 9)"/>
+<dedup_entry id="150" peg="(array-access 136 148)"/>
+<dedup_entry id="151" peg="(actuals 150)"/>
+<dedup_entry id="152" peg="(print)"/>
+<dedup_entry id="153" peg="(invoke 146 4 152 151)"/>
+<dedup_entry id="154" peg="(invoke-&gt;heap-state 153)"/>
+<dedup_entry id="155" peg="(invoke-&gt;exception-status 153)"/>
+<dedup_entry id="156" peg="(heap 154 155)"/>
+<dedup_entry id="157" peg="(invoke-&gt;peg 153)"/>
+<dedup_entry id="158" peg="(pass 149)"/>
+<dedup_entry id="159" peg="(eval 136 158)"/>
+<dedup_entry id="160" peg="(eval 148 158)"/>
+<dedup_entry id="161" peg="(eval 142 158)"/>
+<dedup_entry id="162" peg="(eval 145 158)"/>
+<dedup_entry id="163" peg="(heap 161 162)"/>
+<dedup_entry id="164" peg="(return-node 0 163)"/>
+</id_table>
+<node_equivalences>
+<node_equivalence>
+<first>12</first>
+<second>68</second>
+</node_equivalence>
+<node_equivalence>
+<first>14</first>
+<second>70</second>
+</node_equivalence>
+<node_equivalence>
+<first>17</first>
+<second>65</second>
+</node_equivalence>
+<node_equivalence>
+<first>20</first>
+<second>66</second>
+</node_equivalence>
+<node_equivalence>
+<first>23</first>
+<second>62</second>
+</node_equivalence>
+<node_equivalence>
+<first>26</first>
+<second>63</second>
+</node_equivalence>
+<node_equivalence>
+<first>135</first>
+<second>136</second>
+</node_equivalence>
+<node_equivalence>
+<first>138</first>
+<second>148</second>
+</node_equivalence>
+<node_equivalence>
+<first>141</first>
+<second>154</second>
+</node_equivalence>
+<node_equivalence>
+<first>144</first>
+<second>155</second>
+</node_equivalence>
+</node_equivalences>
+</subjects>

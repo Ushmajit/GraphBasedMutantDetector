@@ -1,0 +1,136 @@
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.plugin.MajorPluginTaskListener.<init>:
+    Created MajorPluginTaskListener with options: [export.mutants]
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.plugin.MajorPluginTaskListener.initMutator:
+    No mutator provided: using default mutation provider
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.initOperatorSymbols:
+    Initializing operator symbols for opcode mapping
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.mutateTree:
+    Mutating tree: Env[AttrContext[Scope[super, this]],outer=Env[AttrContext[Scope[SimpleMethods]]]]
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitClassDef:
+    CLASS: SimpleMethods
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: <init>([])null
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: min([int a, int b])int
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 1
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 1: SimpleMethods.min(line 11, col 19)
+            mutation operator group:   ROR
+            mutation operator:         <=(int,int) |==> <(int,int)
+            original:                  a <= b 
+            mutant:                    a < b
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 2
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 2: SimpleMethods.min(line 11, col 19)
+            mutation operator group:   ROR
+            mutation operator:         <=(int,int) |==> ==(int,int)
+            original:                  a <= b 
+            mutant:                    a == b
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 3
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 3: SimpleMethods.min(line 12, col 20)
+            mutation operator group:   EVR
+            mutation operator:         <IDENTIFIER(int)> |==> <DEFAULT>
+            original:                  a 
+            mutant:                    0
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 4
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 4: SimpleMethods.min(line 14, col 20)
+            mutation operator group:   EVR
+            mutation operator:         <IDENTIFIER(int)> |==> <DEFAULT>
+            original:                  b 
+            mutant:                    0
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.visitMethodDef:
+    METHOD: gcd([int n1, int n2])int
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 5
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 5: SimpleMethods.gcd(line 19, col 19)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  1 
+            mutant:                    0
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 6
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 6: SimpleMethods.gcd(line 19, col 19)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  1 
+            mutant:                    -1
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 7
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 7: SimpleMethods.gcd(line 20, col 22)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> 0
+            original:                  1 
+            mutant:                    0
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 8
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 8: SimpleMethods.gcd(line 20, col 22)
+            mutation operator group:   LVR
+            mutation operator:         POS |==> NEG
+            original:                  1 
+            mutant:                    -1
+[04/24 15:41:16] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 9
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 9: SimpleMethods.gcd(line 20, col 27)
+            mutation operator group:   ROR
+            mutation operator:         <=(int,int) |==> <(int,int)
+            original:                  i <= n1 
+            mutant:                    i < n1
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 10
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 10: SimpleMethods.gcd(line 20, col 27)
+            mutation operator group:   ROR
+            mutation operator:         <=(int,int) |==> ==(int,int)
+            original:                  i <= n1 
+            mutant:                    i == n1
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 11
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 11: SimpleMethods.gcd(line 20, col 38)
+            mutation operator group:   ROR
+            mutation operator:         ==(int,int) |==> <=(int,int)
+            original:                  i == n2 
+            mutant:                    i <= n2
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 12
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 12: SimpleMethods.gcd(line 20, col 38)
+            mutation operator group:   ROR
+            mutation operator:         ==(int,int) |==> >=(int,int)
+            original:                  i == n2 
+            mutant:                    i >= n2
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 13
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 13: SimpleMethods.gcd(line 20, col 33)
+            mutation operator group:   COR
+            mutation operator:         &&(boolean,boolean) |==> ==(boolean,boolean)
+            original:                  i <= n1 && i == n2 
+            mutant:                    i <= n1 == (i == n2)
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 14
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 14: SimpleMethods.gcd(line 21, col 20)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> *(int,int)
+            original:                  n1 % i 
+            mutant:                    n1 * i
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.nextMutant:
+    Creating mutant 15
+[04/24 15:41:17] [INFO   ] org.mutationtesting.major.mutation.Mutator.logMutant:
+    Logging mutant 15: SimpleMethods.gcd(line 21, col 20)
+            mutation operator group:   AOR
+            mutation operator:         %(int,int) |==> +(int,int)
+            original:                  n1 % i 
+            mutant:                    n1 + i

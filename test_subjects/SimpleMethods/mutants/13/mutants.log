@@ -1,0 +1,41 @@
+1:ROR:<=(int,int):<(int,int):SimpleMethods@min(int,int):11:a <= b |==> a < b
+2:ROR:<=(int,int):==(int,int):SimpleMethods@min(int,int):11:a <= b |==> a == b
+3:EVR:<IDENTIFIER(int)>:<DEFAULT>:SimpleMethods@min(int,int):12:a |==> 0
+4:EVR:<IDENTIFIER(int)>:<DEFAULT>:SimpleMethods@min(int,int):14:b |==> 0
+5:LVR:POS:0:SimpleMethods@gcd(int,int):19:1 |==> 0
+6:LVR:POS:NEG:SimpleMethods@gcd(int,int):19:1 |==> -1
+7:LVR:POS:0:SimpleMethods@gcd(int,int):20:1 |==> 0
+8:LVR:POS:NEG:SimpleMethods@gcd(int,int):20:1 |==> -1
+9:ROR:<=(int,int):<(int,int):SimpleMethods@gcd(int,int):20:i <= n1 |==> i < n1
+10:ROR:<=(int,int):==(int,int):SimpleMethods@gcd(int,int):20:i <= n1 |==> i == n1
+11:ROR:<=(int,int):<(int,int):SimpleMethods@gcd(int,int):20:i <= n2 |==> i < n2
+12:ROR:<=(int,int):==(int,int):SimpleMethods@gcd(int,int):20:i <= n2 |==> i == n2
+13:AOR:%(int,int):*(int,int):SimpleMethods@gcd(int,int):21:n1 % i |==> n1 * i
+14:AOR:%(int,int):+(int,int):SimpleMethods@gcd(int,int):21:n1 % i |==> n1 + i
+15:AOR:%(int,int):-(int,int):SimpleMethods@gcd(int,int):21:n1 % i |==> n1 - i
+16:AOR:%(int,int):/(int,int):SimpleMethods@gcd(int,int):21:n1 % i |==> n1 / i
+17:LVR:0:POS:SimpleMethods@gcd(int,int):21:0 |==> 1
+18:LVR:0:NEG:SimpleMethods@gcd(int,int):21:0 |==> -1
+19:ROR:==(int,int):<=(int,int):SimpleMethods@gcd(int,int):21:n1 % i == 0 |==> n1 % i <= 0
+20:ROR:==(int,int):>=(int,int):SimpleMethods@gcd(int,int):21:n1 % i == 0 |==> n1 % i >= 0
+21:AOR:%(int,int):*(int,int):SimpleMethods@gcd(int,int):21:n2 % i |==> n2 * i
+22:AOR:%(int,int):+(int,int):SimpleMethods@gcd(int,int):21:n2 % i |==> n2 + i
+23:AOR:%(int,int):-(int,int):SimpleMethods@gcd(int,int):21:n2 % i |==> n2 - i
+24:AOR:%(int,int):/(int,int):SimpleMethods@gcd(int,int):21:n2 % i |==> n2 / i
+25:LVR:0:POS:SimpleMethods@gcd(int,int):21:0 |==> 1
+26:LVR:0:NEG:SimpleMethods@gcd(int,int):21:0 |==> -1
+27:ROR:==(int,int):<=(int,int):SimpleMethods@gcd(int,int):21:n2 % i == 0 |==> n2 % i <= 0
+28:ROR:==(int,int):>=(int,int):SimpleMethods@gcd(int,int):21:n2 % i == 0 |==> n2 % i >= 0
+29:COR:&&(boolean,boolean):==(boolean,boolean):SimpleMethods@gcd(int,int):21:n1 % i == 0 && n2 % i == 0 |==> n1 % i == 0 == (n2 % i == 0)
+30:STD:<ASSIGN>:<NO-OP>:SimpleMethods@gcd(int,int):22:gcd = i; |==> <NO-OP>
+31:EVR:<IDENTIFIER(int)>:<DEFAULT>:SimpleMethods@gcd(int,int):25:gcd |==> 0
+32:LVR:POS:0:SimpleMethods@isLeapYear(int):30:4 |==> 0
+33:LVR:POS:NEG:SimpleMethods@isLeapYear(int):30:4 |==> -4
+34:AOR:%(int,int):*(int,int):SimpleMethods@isLeapYear(int):30:year % 4 |==> year * 4
+35:AOR:%(int,int):+(int,int):SimpleMethods@isLeapYear(int):30:year % 4 |==> year + 4
+36:AOR:%(int,int):-(int,int):SimpleMethods@isLeapYear(int):30:year % 4 |==> year - 4
+37:AOR:%(int,int):/(int,int):SimpleMethods@isLeapYear(int):30:year % 4 |==> year / 4
+38:LVR:0:POS:SimpleMethods@isLeapYear(int):30:0 |==> 1
+39:LVR:0:NEG:SimpleMethods@isLeapYear(int):30:0 |==> -1
+40:ROR:==(int,int):<=(int,int):SimpleMethods@isLeapYear(int):30:year % 4 == 0 |==> year % 4 <= 0
+41:ROR:==(int,int):>=(int,int):SimpleMethods@isLeapYear(int):30:year % 4 == 0 |==> year % 4 >= 0
